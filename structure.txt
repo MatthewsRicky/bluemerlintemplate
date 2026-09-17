@@ -1,0 +1,51 @@
+blue-marlin/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   │
+│   ├── about/
+│   │   └── page.tsx
+│   │
+│   ├── menu/
+│   │   └── page.tsx
+│   │
+│   ├── experience/
+│   │   └── page.tsx
+│   │
+│   ├── gallery/
+│   │   └── page.tsx
+│   │
+│   ├── reservations/
+│   │   └── page.tsx
+│   │
+│   └── contact/
+│       └── page.tsx
+│
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── home/
+│   │   ├── Hero.tsx
+│   │   ├── StoryPreview.tsx
+│   │   ├── SignatureDishes.tsx
+│   │   ├── ExperiencePreview.tsx
+│   │   ├── GalleryPreview.tsx
+│   │   └── ReservationCTA.tsx
+│   │
+│   └── ui/
+│       ├── Reveal.tsx
+│       ├── SectionHeading.tsx
+│       └── Button.tsx
+│
+├── data/
+│   ├── menu.ts
+│   ├── gallery.ts
+│   └── navigation.ts
+│
+├── public/
+│   └── images/
+│
+└── ...
