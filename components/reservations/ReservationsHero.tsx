@@ -6,7 +6,7 @@ export default function ReservationsHero() {
     <section className="relative min-h-[65svh] overflow-hidden bg-[#082f49] text-white">
       <div className="absolute inset-0">
         <Image
-          src="/images/blue-marlin-sunset.jpg"
+          src="/images/blue-marlin-restaurant.jpg"
           alt="Sunset at Blue Marlin Beach Restaurant"
           fill
           priority

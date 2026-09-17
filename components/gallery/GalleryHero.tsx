@@ -6,7 +6,7 @@ export default function GalleryHero() {
     <section className="relative min-h-[65svh] overflow-hidden bg-[#082f49] text-white">
       <div className="absolute inset-0">
         <Image
-          src="/images/blue-marlin-interior.jpg"
+          src="/images/blue-marlin-beach.jpg"
           alt="Blue Marlin Beach Restaurant in Diani Beach"
           fill
           priority
