@@ -1,12 +1,20 @@
 import Link from "next/link";
 import { navigationItems } from "@/data/navigation";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-[#082f49] text-[#f6f1e8]">
       <div className="mx-auto max-w-[1400px] px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          <div>
+          <div className="flex flex-col gap-4">
+            <Image
+              src={"/images/blue-marlin-logo.avif"}
+              width={80}
+              height={25}
+              alt="logo"
+              className="bg-sky-200 p-2 rounded"
+            />
             <p className="font-display text-4xl sm:text-5xl">Blue Marlin</p>
 
             <p className="mt-2 text-[10px] uppercase tracking-[0.28em] text-white/50">

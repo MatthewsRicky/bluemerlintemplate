@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { navigationItems } from "@/data/navigation";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,16 +15,25 @@ export default function Header() {
         <nav className="flex items-center justify-between border border-white/20 bg-[#082f49]/35 px-5 py-4 text-white backdrop-blur-md sm:px-7">
           <Link
             href="/"
-            className="group flex flex-col leading-none"
+            className="group flex gap-6 leading-none"
             onClick={() => setMobileOpen(false)}
           >
-            <span className="font-display text-2xl tracking-wide sm:text-3xl">
-              Blue Marlin
-            </span>
+            <Image
+              src={"/images/blue-marlin-logo.avif"}
+              width={80}
+              height={25}
+              alt="logo"
+              className="bg-sky-200 p-2 rounded"
+            />
+            <div className="flex flex-col">
+              <span className="font-display text-2xl tracking-wide sm:text-3xl">
+                Blue Marlin
+              </span>
 
-            <span className="mt-1 text-[9px] uppercase tracking-[0.3em] text-white/65">
-              Beach Restaurant
-            </span>
+              <span className="mt-1 text-[9px] uppercase tracking-[0.3em] text-white/65">
+                Beach Restaurant
+              </span>
+            </div>
           </Link>
 
           <div className="hidden items-center gap-7 lg:flex">
