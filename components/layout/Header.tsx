@@ -15,7 +15,7 @@ export default function Header() {
         <nav className="flex items-center justify-between border border-white/20 bg-[#082f49]/35 px-5 py-4 text-white backdrop-blur-md sm:px-7">
           <Link
             href="/"
-            className="group flex gap-6 leading-none"
+            className="flex gap-6 leading-none"
             onClick={() => setMobileOpen(false)}
           >
             <Image
@@ -23,7 +23,7 @@ export default function Header() {
               width={80}
               height={25}
               alt="logo"
-              className="bg-sky-200 p-2 rounded"
+              className="bg-sky-200/90 p-2 rounded"
             />
             <div className="flex flex-col">
               <span className="font-display text-2xl tracking-wide sm:text-3xl">
