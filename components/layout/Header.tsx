@@ -58,6 +58,7 @@ export default function Header() {
           <button
             type="button"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-controls="mobile-navigation"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((current) => !current)}
             className="flex h-11 w-11 items-center justify-center border border-white/20 lg:hidden"
@@ -71,7 +72,8 @@ export default function Header() {
         </nav>
 
         {mobileOpen && (
-          <div className="border-x border-b border-white/20 bg-[#082f49] px-5 py-5 text-white lg:hidden">
+          <div className="border-x border-b border-white/20 bg-[#082f49] px-5 py-5 text-white lg:hidden"
+          id="mobile-navigation">
             <div className="flex flex-col">
               {navigationItems.map((item) => (
                 <Link

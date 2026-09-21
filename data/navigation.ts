@@ -25,6 +25,10 @@ export const navigationItems: NavigationItem[] = [
     href: "/gallery",
   },
   {
+    label: "Stay",
+    href: "/stay",
+  },
+  {
     label: "Contact",
     href: "/contact",
   },
