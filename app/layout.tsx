@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -35,6 +36,10 @@ export default function RootLayout({
       <body className={`${cormorant.variable} ${inter.variable} antialiased`}>
         <Header />
         {children}
+        <WhatsAppButton
+          phone="+254712559117"
+          message="Hello Blue Marlin Beach Restaurant, I would like to make an enquiry."
+        />
         <Footer />
       </body>
     </html>
